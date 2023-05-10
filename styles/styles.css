@@ -1,3 +1,6 @@
+.body{
+    width: 100%;
+}
 .login {
     display: flex;
 }
@@ -123,28 +126,45 @@ header input {
     margin-top: -27px;
     font-size: 17px;
 }
-.containerDos{
+.paginaOpcion{
     display: flex;
-    justify-content: end;
-    width: 65%;
-    margin-left: 160px;
-}
-.logoCuatro{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 280px;
-    margin-top: -102px;
 }
 .opciones{
     display: flex;
     justify-content: start;
     width: 20%;
-    height: 160px;
-    border: 2px solid;
+    height: 350px;
+    border: 2px solid ;
 }
 .opcionAtras{
-   
     width: 35px;
     height: 35px;
+}
+.menuOpciones{
+    border: 2px solid ;
+    width: 70%;
+    height: 33px;
+    margin-top: 60px ;
+}
+.menuOpciones img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.cliente{
+
+}
+.containerDos{
+    display: flex;
+    width: 80%;
+    border: 2px solid;
+}
+.logoCuatro{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 290px;
+    margin-left: 180px;
+    margin-top: 40px;
 }
