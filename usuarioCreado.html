@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Usuario creado</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <img src="./assets/opciones.png">
+            <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
+            <img src="./assets/usuario sin foto.jpg">
+        </header>
+    </section>
+    <div class="cuadroFondo">
+        <div class="opcionesDos">
+            <div class="menuOpcionesDos">
+                <p>Administracion de usuarios</p>
+            </div>
+            <div class="menuOpcionesDos">
+                <p>Perfiles y permisos</p>
+            </div>
+            <div class="menuOpcionesDos">
+                <p>Cuentas</p>
+            </div>
+        </div>
+        <section class="informacion">
+            <div class="botones">
+                <img src="./assets/Agregar usuario.png">
+                <img src="./assets/guardar.png">
+                <img src="./assets/lupa.png">
+                <img src="./assets/lapiz.jpg">
+                <img src="./assets/cancelar.png">
+                <div class="usuarioCreado">
+                    <p>¡Usuario creado exitosamente!</p>
+                </div>
+            </div>
+
+            <section>
+                <div class="admUsuarios">
+                    <p>ADMINISTRACION DE USUARIOS</p>
+                </div>
+            </section>
+            <div class="informacion-personal">
+                <section>
+                    <p>Tipo de usuario</p>
+                    <select>
+                        <option value="S">Seleccione</option>
+                        <option value="A">Administrador</option>
+                        <option value="T">Trabajador</option>
+                    </select>
+                    <p>Identificacion</p>
+                    <input type="text">
+                    <p>Apellidos</p>
+                    <input type="text">
+                    <p>Direccion</p>
+                    <input type="text">
+                    <p>Celular</p>
+                    <input type="number">
+                </section>
+                <section>
+                    <p>Tipo de identificacion</p>
+                    <select>
+                        <option value="S">Seleccione</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CC">Cedula ciudadania</option>
+                        <option value="TE">Tarjeta extranjeria</option>
+                        <option value="CE">Cedula extranjeria</option>
+                        <option value="PA">Pasaporte</option>
+                        <option value="LC">Licencia de conduccion</option>
+                    </select>
+                    <p>Nombre</p>
+                    <input type="text">
+                    <p>Fecha de nacimiento</p>
+                    <input type="date">
+                    <p>Correo electronico</p>
+                    <input type="email">
+                    <p>Contraseña</p>
+                    <input type="password">
+                </section>
+                <section class="cuadroFotoDos">
+                    <div class="fotoPerfilDos">
+                        <p>Foto de perfil</p>
+                        <img src="./assets/usuario sin foto.jpg">
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    </section>
+</body>
+
+</html>

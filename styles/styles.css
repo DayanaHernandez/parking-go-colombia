@@ -1,6 +1,7 @@
-.body{
+.body {
     width: 100%;
 }
+
 .login {
     display: flex;
 }
@@ -39,7 +40,7 @@ form {
     border: solid 2.5px rgb(214, 209, 209);
 }
 
-button {
+.iniciarSesion {
     margin-top: 30px;
     margin-left: 65px;
     border: solid 2.5px rgb(214, 209, 209);
@@ -54,7 +55,7 @@ header {
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 5px;
-    margin-top: 35px;
+
 }
 
 header img {
@@ -79,7 +80,7 @@ header input {
     justify-content: center;
     width: 100%;
     height: 280px;
-    margin-top: 50px;
+    margin-top: 110px;
 }
 
 .container {
@@ -125,44 +126,51 @@ header input {
     margin-top: -27px;
     font-size: 17px;
 }
-.paginaOpcion{
+
+.paginaOpcion {
     display: flex;
-    
+
 }
-.opciones{
+
+.opciones {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: 20%;
     height: 350px;
-    border: 2px solid ;
+    border: 2px solid;
 }
-.opcionAtras{
+
+.opcionAtras {
     width: 35px;
     height: 35px;
 }
-.menuOpciones{
+
+.menuOpciones {
     display: flex;
-    justify-content: space-around  ;
+    justify-content: space-around;
     align-items: center;
-    border: 2px solid ;
+    border: 2px solid;
     width: 70%;
     height: 33px;
-    margin-top: 20px ;
+    margin-top: 20px;
     margin-left: 20px;
     border: solid 2.5px rgb(214, 209, 209);
 }
-.menuOpciones img{
+
+.menuOpciones img {
     width: 25px;
     height: 25px;
     margin-left: 10px;
     margin-top: 5px;
 }
-.containerDos{
+
+.containerDos {
     display: flex;
     width: 80%;
 }
-.logoCuatro{
+
+.logoCuatro {
     display: flex;
     justify-content: center;
     width: 60%;
@@ -170,3 +178,323 @@ header input {
     margin-left: 180px;
     margin-top: 40px;
 }
+
+/* crear usuario*/
+.informacion-contacto {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.opcionesDos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 15%;
+    height: 353px;
+    margin-left: 5px;
+    border: solid 3px rgb(184, 181, 181);
+}
+
+.opcionesDos .menuOpcionesDos p {
+    text-align: center;
+    width: 135px;
+    height: 33px;
+    border: solid 2px rgb(184, 181, 181);
+}
+
+.menuOpcionesDos input {
+    width: 138px;
+    height: 40px;
+    border: solid 2px rgb(184, 181, 181);
+    background-color: white;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+}
+
+.formulario .informacionPerfil {
+    text-align: center;
+    width: 95%;
+    border: solid 2px black;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+ .cuadroMediano {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid;
+    width: 95%;
+    margin-left: 1%;
+    height: 290px;
+    margin-top: 10px;
+}
+
+.cuadroMediano input {
+    margin-top: 5px;
+    margin-left: 8px;
+    height: 20px;
+    width: 180px;
+}
+
+.cuadroMediano p {
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+.cuadroFoto {
+    border: 2px solid;
+    height: 230px;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.fotoPerfil {
+    width: 99%;
+    height: 40px;
+    border: 2px solid;
+}
+
+.fotoPerfil p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fotoPerfil img {
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+/*contraseña*/
+.cuadroFondo {
+    width: 100%;
+    height: 490px;
+    border: 2px solid;
+    margin-top: 10px;
+    display: flex;
+}
+
+.formulariosDos {
+    display: flex;
+    width: 100%;
+    border: 2px solid;
+    height: 355px;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+.formulariosDos p {
+    width: 90%;
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 19px;
+}
+
+.cuadros {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    height: 45px;
+}
+
+.formulariosDos input {
+    width: 250px;
+    height: 25px;
+    margin-top: 30px;
+}
+
+.formulariosDos .datosIngresoDos {
+    margin-bottom: 2px;
+}
+
+.formulariosDos .datosIngresoFinal {
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 100px;
+}
+
+.formulariosDos .cambioContraseña {
+    margin-left: 25px;
+}
+
+.formulariosDos .cuadros .guardar {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+/*contraseñaGuardada*/
+.contraseñaGuardada {
+    display: flex;
+    text-align: end;
+    width: 50%;
+}
+
+.contraseñaGuardada p {
+    border: 2px solid rgb(104, 176, 104);
+    background-color: rgb(104, 176, 104);
+    text-align: center;
+    width: 180px;
+    height: 35px;
+    margin-left: 45%;
+}
+
+/* administrador usuario*/
+/*no se crean porque son la mismas clase*/
+/* agregar informacion del usuario*/
+.informacion{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   
+}
+.botones{
+    width: 95%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+.botones img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin-top: 3px;
+    margin-left: 13px;
+}
+.admUsuarios{
+    width: 95%;
+    border: 2px solid;
+    margin-left: 1%;
+    text-align: center;
+    height: 40px;
+}
+.informacion-personal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid;
+    width: 95%;
+    height: 270px;
+    margin-left: 1%;
+    margin-top: 2px;
+    
+}
+.informacion-personal p{
+    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-top: 7px;
+}
+.informacion-personal select    {
+    margin-left: 10px;
+    width: 180px;
+}
+.informacion-personal input{
+    margin-left: 10px;
+}
+.informacion-personal .cuadroFotoDos{
+    border: 2px solid;
+    width: 15%;
+    height: 180px;
+    margin-top: 10px;
+}
+.informacion-personal .fotoPerfilDos{
+    border: 2px solid;
+    width: 98%;
+    height: 35px;
+}
+.informacion-personal .fotoPerfilDos img{
+    width: 120px;
+    height: 120px;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.fotoPerfilDos p {
+    text-align: center;
+}
+/* se crea usuario correctamente*/
+.botones .usuarioCreado{
+    border: 2px solid rgb(104, 176, 104);
+    background-color: rgb(104, 176, 104);
+    height: 40px;
+    width: 18%;
+    margin-left: 60%;
+    margin-top: -20px;
+    position: fixed;
+}
+.botones .usuarioCreado p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* 
+.formulariosDos{
+    width: 40%;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+.datosIngresoInicial{
+    margin-top: 50px;
+}
+.datosIngresoDos{
+    margin: 3px;
+}
+.ingresoDos {
+    margin-left: 140px;
+    margin-top : -20px;
+    height: 20px;
+    border: solid 2.5px rgb(214, 209, 209);
+   
+}
+.datosIngresoFinal{
+    margin-top:10px;
+    margin-left: 18px;
+}
+.cambioContraseña{
+    margin-left: 21px;
+}
+.guardar{
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 3px;
+}
+.contraseña{
+    width: 40%;
+    height: 350px;
+    border: 2px solid;
+    margin-top: 10px;
+}
+.contraseñaGuardada{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 10px;
+    border:2px solid rgb(104, 176, 104);
+    background: rgb(104, 176, 104);
+    width: 170px;
+    height: 40px;
+    align-items: center;
+}
+.contraseñaGuardada p{
+    margin-left: 10px;
+} */
