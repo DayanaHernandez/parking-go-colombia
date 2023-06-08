@@ -1,5 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 .body {
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .login {
@@ -10,15 +16,15 @@
     display: flex;
     justify-content: flex-end;
     width: 700px;
-    height: 491px;
+    height: 481px;
 }
 
 .logoUno {
     display: flex;
     justify-content: flex-start;
-    width: 70%;
-    margin-top: 50px;
-    margin-left: 40px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 form {
@@ -27,6 +33,7 @@ form {
     width: 250px;
     height: 350px;
     border: solid 2.5px rgb(214, 209, 209);
+    background-color: #eeeeeedc;
 }
 
 .datosIngreso {
@@ -37,38 +44,47 @@ form {
 
 .ingreso {
     margin-left: 25px;
-    border: solid 2.5px rgb(214, 209, 209);
+    border: solid 2.5px rgb(207, 206, 206);
+    background-color: rgb(228 225 225);
 }
 
 .iniciarSesion {
     margin-top: 30px;
     margin-left: 65px;
-    border: solid 2.5px rgb(214, 209, 209);
+    border: solid 2.5px rgb(207, 206, 206) ;
+    background-color: rgb(228 225 225);
 }
 
 header {
-    height: 60px;
-    width: 98%;
-    border: 3px solid;
+    height: 55px;
+    width: 97%;
+    border: 2px solid;
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 5px;
-
+    background-color: #ffffa2;
 }
-
-header img {
-    width: 60px;
-    height: 60px;
+header a{
+    padding:0 ;
+    border: 0px;
 }
-
+.icon-user{
+    margin-top: 2px;
+    font-size: 38px;
+    border-radius: 95%;
+    border: 1px solid black;
+}
+.icon-userUno{
+    font-size: 50px;
+}
 header input {
     width: 350px;
-    height: 48px;
+    height: 40px;
     padding-left: 15px;
-    font-size: 15px;
-    border: 2.5px solid;
+    font-size: 13px;
+    border: 2.3px solid;
 }
 
 .paginaPrincipal {
@@ -82,7 +98,7 @@ header input {
     height: 280px;
     margin-top: 110px;
 }
-
+/*Perfil*/
 .container {
     display: flex;
     width: 100%;
@@ -104,6 +120,8 @@ header input {
     width: 22%;
     height: 400px;
     margin-left: 240px;
+    border: solid 2.3px rgb(184, 181, 181);
+    background-color: #eeeeeedc;
 }
 
 .datosPerfilUno {
@@ -114,38 +132,52 @@ header input {
 .datosPerfilDos {
     font-size: 19px;
 }
-
-.configuracion {
-    width: 28px;
-    height: 28px;
+.perfilUsuario button{
+    display: flex;
     margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:#eeeeeedc ;
+    border: solid 2.3px rgb(184, 181, 181);
+    background-color: rgb(228 225 225);
+}
+
+.usuarioPerfil{
+    font-size: 110px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.configuracion {
+   font-size:25px;
+   margin-top: 5px;
 }
 
 .Administrar {
-    margin-left: 35px;
-    margin-top: -27px;
-    font-size: 17px;
+    margin-left: 6px;
+    margin-top: 9px;
+    font-size: 13px;
 }
-
+/*menu opciones*/
 .paginaOpcion {
     display: flex;
-
 }
 
 .opciones {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 20%;
+    width: 18%;
     height: 350px;
-    border: 2px solid;
+    border: solid 2.3px rgb(184, 181, 181);
+    background-color: #eeeeeedc;
 }
+.opciones .opcionAtras{
+    font-size: 30px;
+    margin-bottom: 20px;
 
-.opcionAtras {
-    width: 35px;
-    height: 35px;
 }
-
+/*
 .menuOpciones {
     display: flex;
     justify-content: space-around;
@@ -157,14 +189,34 @@ header input {
     margin-left: 20px;
     border: solid 2.5px rgb(214, 209, 209);
 }
-
-.menuOpciones img {
+*/
+.boton-opciones{
+    width: 80%;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 2px gray;
+    background-color: white;
+}
+.boton-opciones img {
     width: 25px;
     height: 25px;
+    margin-top: 2px;
     margin-left: 10px;
-    margin-top: 5px;
 }
-
+.boton-opciones p{
+    margin-left: 15px;
+}
+.boton-opciones .iconos{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.opciones button{
+    border: solid 2px rgb(207, 206, 206);
+    background-color: rgb(217, 215, 215)
+}
 .containerDos {
     display: flex;
     width: 80%;
@@ -179,7 +231,7 @@ header input {
     margin-top: 40px;
 }
 
-/* crear usuario*/
+/* informacion usuario*/
 .informacion-contacto {
     width: 100%;
     height: 400px;
@@ -192,26 +244,27 @@ header input {
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
-    width: 15%;
+    width: 16%;
     height: 353px;
     margin-left: 5px;
-    border: solid 3px rgb(184, 181, 181);
+    border: solid 2.3px rgb(184, 181, 181);
+    background-color: #eeeeeedc;
 }
 
-.opcionesDos .menuOpcionesDos p {
+.opcionesDos .menuOpcionesDos  {
     text-align: center;
     width: 135px;
     height: 33px;
     border: solid 2px rgb(184, 181, 181);
-}
-
-.menuOpcionesDos input {
-    width: 138px;
+}   
+.opcionesDos button{
+    margin-top: 8px;
+    width:80%;
     height: 40px;
-    border: solid 2px rgb(184, 181, 181);
-    background-color: white;
-}
+    border: solid 2px rgb(207, 206, 206);
+    background-color: rgb(228 225 225);
 
+}
 .formulario {
     width: 100%;
     height: 100%;
@@ -220,9 +273,11 @@ header input {
 .formulario .informacionPerfil {
     text-align: center;
     width: 95%;
+    height: 45px;
     border: solid 2px black;
     margin-top: 20px;
     margin-left: 1%;
+    background-color: #ffffa2;
 }
 
  .cuadroMediano {
@@ -230,6 +285,7 @@ header input {
     flex-wrap: wrap;
     flex-direction: column;
     border: 2px solid;
+    background-color: #eeeeee70;
     width: 95%;
     margin-left: 1%;
     height: 290px;
@@ -241,6 +297,8 @@ header input {
     margin-left: 8px;
     height: 20px;
     width: 180px;
+    border: 2px solid grey;
+    background-color:#f0eeee ; 
 }
 
 .cuadroMediano p {
@@ -248,40 +306,42 @@ header input {
     margin-bottom: 3px;
 }
 
-.cuadroFoto {
+.cuadroMediano .cuadroFoto {
     border: 2px solid;
-    height: 230px;
+    height: 180px;
     width: 20%;
     margin-top: 30px;
 }
 
-.fotoPerfil {
-    width: 99%;
-    height: 40px;
-    border: 2px solid;
+.cuadroFoto .fotoPerfil{
+    width: 97%;
+    height: 35px;
+    margin-top: -7px;
+    font-size: 20px;
+    border-bottom: 2px solid;
 }
-
-.fotoPerfil p {
+.cuadroFoto .fotoPerfil p{
+   font-size: 20px;
+   text-align: center;
+}
+.cuadroFoto .foto{
+    font-size: 120px;
+    margin-left: 20px;
+}
+.cuadroFoto.fotoPerfil p {
     margin-top: 10px;
     text-align: center;
     font-size: 20px;
 }
 
-.fotoPerfil img {
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    margin-top: 18px;
-    margin-left: 30px;
-}
-
 /*contraseña*/
 .cuadroFondo {
-    width: 100%;
+    width: 99.6%;
     height: 490px;
     border: 2px solid;
     margin-top: 10px;
     display: flex;
+    background-color:rgb(198 196 196 / 7%);
 }
 
 .formulariosDos {
@@ -291,6 +351,8 @@ header input {
     height: 355px;
     margin-top: 20px;
     margin-left: 1%;
+    margin-right: 1%;
+    background-color: #eeeeeedc;
 }
 
 .formulariosDos p {
@@ -311,6 +373,8 @@ header input {
     width: 250px;
     height: 25px;
     margin-top: 30px;
+    border: 1.6px solid grey;
+    background-color: #f3f1f1ea;
 }
 
 .formulariosDos .datosIngresoDos {
@@ -327,17 +391,27 @@ header input {
     margin-left: 25px;
 }
 
-.formulariosDos .cuadros .guardar {
+.formulariosDos .cuadros button {
     width: 50%;
     margin-top: 80px;
-    margin-left: 10px;
+    margin-left: 50px;
+    border: 2px solid grey;
+    background-color: white;
+    height: 40px;
+}
+.formulariosDos .cuadros .contraseña {
+   width: 80%;
+   height: 40px;
+   border: 1.6px solid grey;
+   background-color: rgb(228 225 225);
 }
 
 /*contraseñaGuardada*/
 .contraseñaGuardada {
     display: flex;
-    text-align: end;
-    width: 50%;
+    width: 35%;
+    margin-top: -20px;
+    margin-right: 10px;
 }
 
 .contraseñaGuardada p {
@@ -349,8 +423,8 @@ header input {
     margin-left: 45%;
 }
 
-/* administrador usuario*/
-/*no se crean porque son la mismas clase*/
+/* administrador usuario no se crean porque son la mismas clases*/
+
 /* agregar informacion del usuario*/
 .informacion{
   width: 100%;
@@ -362,17 +436,19 @@ header input {
 }
 .botones{
     width: 95%;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
     margin-left: 1%;
 }
-.botones img{
-    width: 35px;
-    height: 35px;
+.botones button{
+    margin-left: 3px;
+    border: 1.6px solid black;
+    background-color: white;
     border-radius: 100%;
-    border: 2px solid black;
-    margin-top: 3px;
-    margin-left: 13px;
+    background-color: rgb(184 181 181 / 41%);
+}
+.icon-opciones{
+    font-size: 25px;
 }
 .admUsuarios{
     width: 95%;
@@ -380,12 +456,12 @@ header input {
     margin-left: 1%;
     text-align: center;
     height: 40px;
+    background-color: #ffffa2;
 }
 .informacion-personal{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px solid;
     width: 95%;
     height: 270px;
     margin-left: 1%;
@@ -400,101 +476,305 @@ header input {
 .informacion-personal select    {
     margin-left: 10px;
     width: 180px;
+    border: 1.6px solid grey;
+    background-color: #f0eeeef2;
 }
 .informacion-personal input{
     margin-left: 10px;
+    border: 1.6px solid grey;
+    background-color: #f0eeee;
 }
 .informacion-personal .cuadroFotoDos{
     border: 2px solid;
-    width: 15%;
-    height: 180px;
-    margin-top: 10px;
+    width: 18%;
+    height: 160px;
+    margin-top: 20px;
 }
 .informacion-personal .fotoPerfilDos{
-    border: 2px solid;
+    border-bottom: 2px solid;
     width: 98%;
     height: 35px;
+    margin-top: -7px; 
 }
-.informacion-personal .fotoPerfilDos img{
-    width: 120px;
-    height: 120px;
-    margin-top: 18px;
-    margin-left: 20px;
+.informacion-personal .cuadroFotoDos .perfilFoto{
+        font-size: 130px;
+        margin-left: 13px;
+    
 }
 .fotoPerfilDos p {
+    padding-top: 8px;
     text-align: center;
 }
 /* se crea usuario correctamente*/
-.botones .usuarioCreado{
+.usuarioCreado{
     border: 2px solid rgb(104, 176, 104);
     background-color: rgb(104, 176, 104);
     height: 40px;
-    width: 18%;
+    width: 20%;
     margin-left: 60%;
-    margin-top: -20px;
+    margin-top: 40px;
     position: fixed;
 }
-.botones .usuarioCreado p{
+.usuarioCreado p{
     text-align: center;
-    margin-top: 10px;
 }
-
-
-
-
-
-
-
-/* 
-.formulariosDos{
-    width: 40%;
-    height: 80%;
+.cuadroFotoDos .fotoPerfilDos .perfilFoto{
+    font-size: 130px;
+    margin-left: 13px;
+}
+/*pefiles y permisos*/
+.info-usuario{
+    width: 95%;
+    height: 50px;
+    margin-left: 1%;
+    display: flex; 
+}
+.info-usuario section{
+    width:47.5%;
+}
+.info-usuario select{
+    width: 65%;
+    height: 18px;
     margin-left: 20px;
-    margin-top: 10px;
-    border: 2px solid;
+    border: 1.6px solid grey;
+    background-color: #eeeeeedc;
 }
-.datosIngresoInicial{
-    margin-top: 50px;
+.info-usuario input{
+    width: 65%;
+    height: 14px;
+    margin-left: 20px;
+    border: 1.6px solid grey;
+    background-color: #eeeeeedc;
 }
-.datosIngresoDos{
-    margin: 3px;
+.info-usuario p{
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-bottom: 3px;
 }
-.ingresoDos {
-    margin-left: 140px;
-    margin-top : -20px;
-    height: 20px;
-    border: solid 2.5px rgb(214, 209, 209);
-   
+.permisos{
+    width: 95%;
+    height: 50px;
+    border: 2px solid grey;
+    margin-left: 1%;
+    display: flex;   
 }
-.datosIngresoFinal{
-    margin-top:10px;
-    margin-left: 18px;
-}
-.cambioContraseña{
-    margin-left: 21px;
-}
-.guardar{
-    height: 30px;
-    margin-left: 180px;
-    margin-top: 3px;
-}
-.contraseña{
-    width: 40%;
-    height: 350px;
-    border: 2px solid;
-    margin-top: 10px;
-}
-.contraseñaGuardada{
-    display: flex;
-    align-items: center;
-    float: right;
-    margin-top: 10px;
-    border:2px solid rgb(104, 176, 104);
-    background: rgb(104, 176, 104);
-    width: 170px;
+.adm-clientes button{
+    width: 130px;
     height: 40px;
-    align-items: center;
+    border: 1.8px solid grey;
+    background-color: #eeeeeedc;
+    margin: 5px;   
 }
-.contraseñaGuardada p{
+.adm-clientes p{
+    margin: 1px;
+    font-size: 13px;
+    text-align: center;
+ }
+.adm-facturacion button{
+    width: 130px;
+    height: 40px;
+    margin: 5px;  
+    text-align: center;
+    border: 1.8px solid grey;
+    background-color:#eeeeeedc;
+}
+
+.adm-celdas button{
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+    margin: 5px;  
+    text-align: center;
+    border: 1.8px solid grey;
+    background-color: #eeeeeedc;
+}
+.adm-celdas  p{
+    margin: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+.permisosClientes{
+    width: 95%;
+    height: 170px;
+    margin-left: 1%;
+    display: flex;
+}
+.cuadro-permisos-clientes{
+    width:50%;
+    height: 110px;
+    border: 2px solid grey;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.permisos-clientes{
+    width: 94%;
+    height: 20px;
+    border: 1.6px solid grey;
+    margin: 8px;
+    background-color: #ffffa2;
+}
+.cuadro-permisos-clientes p{
+    margin-top: 2px;
+    text-align: center;
+    margin-bottom: 0px;
+ 
+}
+.icon-check{
+    font-size: 20px;
+    margin-left: 13px; color:grey;
+}
+.cuadro-config-permisos{
+    width:50%;
+    height: 110px;
+    border: 2px solid grey;
     margin-left: 10px;
-} */
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.config-permisos{
+    width: 94%;
+    height: 20px; 
+    border: 1.8px solid grey;
+    margin: 8px;
+    background-color: #ffffa2;
+}
+.config-permisos p{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.config-permisos-p{
+   margin: 5px;
+}
+/*PERMISOS FACTURACION*/
+.permiso-facturacion{
+    width: 94.6%;
+    height: 35px;
+    border: 2px solid grey;
+    margin-left: 1%;
+    margin-top: 1px;
+    text-align: center;
+    padding: 2px;
+    background-color: #ffffa2;
+}
+.permiso-facturacion p{
+    margin-top: 10px;
+}
+.lista-permisos{
+    border: 2px solid grey;
+    background-color: #eeeeeedc;
+    width: 95%;
+    height: 123px;
+    margin-left: 1%;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lista-permisos p {
+    font-size: 15px;
+}
+/*Permisos creados*/
+.informacion-permisos-creados{
+    width: 95%;
+     
+    display: flex;
+    margin-left: 1%;
+    margin-top: 20px;
+}
+.permisos-creados{
+    width: 28%;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;    
+    padding-right: 10px; 
+    background-color:rgb(104, 176, 104) ;
+    border: 1px solid rgb(104, 176, 104);
+    font-size: 15   px;
+}
+.boton-guardar{
+    width: 72%;
+    height: 40px;
+}
+.boton-guardar button{
+    margin-left: 3px;
+    border: 1.6px solid black;
+    background-color: rgb(184 181 181 / 41%);;
+    border-radius: 100%;
+}
+.icon-opciones{ 
+    font-size: 25px;
+}
+/*CUENTAS*/
+.cuenta{
+    width: 97%;
+    height: 40px;
+    border: 2px solid black;
+    margin-left: 1%;
+    margin-top: 70px;
+    background-color:#ffffa2 ;
+}
+.cuenta p{
+    text-align: center;
+}
+.informacion-cuenta{
+    width: 97%;
+    height: 190px;
+    margin-top: 10x;
+    margin-left: 1%;
+    display: flex;
+    
+}
+.informacion-cuenta p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+.informacion-cuenta select{
+    width: 50%;
+    border: 2px solid grey;
+    background-color:   #f0eeee;
+    margin-top:5px;
+    margin-left: 2px;
+}
+.informacion-cuenta input{
+    width: 70%;
+    margin-top: 30px;
+    height: 20px;
+    border: 2px solid grey;
+    background-color:   #f0eeee ;
+}
+.eliminar-cuenta{
+    width:97% ;
+    
+    margin-top: 20px;
+}
+.eliminar-cuenta button{
+    height: 30px;
+    width: 30%;
+    margin-left: 30%;
+    background-color:#bababa;
+    border: 1px solid #bababa;
+}
+/*Cuenta eliminada*/
+.cuenta-eliminada{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    border: solid 1px rgb(104, 176, 104);
+    background-color: rgb(104, 176, 104);
+    margin-top: 30px;
+    margin-left: 67%;
+    text-align: center;
+
+}
+.cuenta-eliminada p{
+    margin-top: 5px;
+}

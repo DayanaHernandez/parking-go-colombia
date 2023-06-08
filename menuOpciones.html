@@ -7,32 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Menu opciones</title>
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--pagina principal menu opciones-->
     <section>
         <header>
-            <img src="./assets/opciones.png">
+            <a target="_blank" href="menuOpciones.html" style="text-decoration: none;">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
             <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
-            <img src="./assets/usuario sin foto.jpg">
+            <a target="_blank" href="perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
         </header>
     </section>
     <section class="paginaOpcion">
         <div class="opciones">
-            <img src="./assets/atras.png" class="opcionAtras">
-            <div class="menuOpciones">
-                <img src="./assets/facturacion.png">Facturacion
-            </div>
-            <div class="menuOpciones">
-                <img src="./assets/configuracion.png">Cliente
-            </div>
-            <div class="menuOpciones">
-                <img src="./assets/usuario sin foto.jpg">Perfil
-            </div>
-            <div class="menuOpciones">
-                <img src="./assets/cerrarsesion.jpg">Cerrar sesion
-            </div>
+           <a href="paginaPrincipal.html">
+            <i class="fa fa-undo opcionAtras" aria-hidden="true"></i>
+            </a> 
+            <button class="boton-opciones">
+                <i class="fa fa-sack-dollar iconos"></i>
+                <p>Facturacion</p>
+            </button>
+            <a href="administradorUsuario.html"><button class="boton-opciones">
+                <i class="bi bi-gear iconos"></i>
+                <p>Cliente</p>
+            </button></a>
+            <a href="informacionUsuario.html"><button class="boton-opciones">
+                <i class="bi bi-person iconos"></i>
+                <p>Perfil</p>
+            </button></a>
+            <a href="index.html"><button class="boton-opciones">
+                <i class="bi bi-box-arrow-right iconos"></i>
+                <p>Cerrar sesion  </p>  
+            </button></a> 
         </div>
         <div class="containerDos">
             <div>

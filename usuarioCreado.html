@@ -7,45 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Usuario creado</title>
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section>
         <header>
-            <img src="./assets/opciones.png">
+            <a target="_blank" href="./menuOpciones.html">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
             <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
-            <img src="./assets/usuario sin foto.jpg">
+            <a target="_blank" href="./perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
         </header>
     </section>
     <div class="cuadroFondo">
         <div class="opcionesDos">
-            <div class="menuOpcionesDos">
-                <p>Administracion de usuarios</p>
-            </div>
-            <div class="menuOpcionesDos">
-                <p>Perfiles y permisos</p>
-            </div>
-            <div class="menuOpcionesDos">
-                <p>Cuentas</p>
-            </div>
+            <button>Administracion de usuarios</button>
+            <button><a href="permisosPerfiles.html">Perfiles y permisos</a></button>
+            <button><a href="cuentas.html">Cuentas</a></button>
         </div>
         <section class="informacion">
             <div class="botones">
-                <img src="./assets/Agregar usuario.png">
-                <img src="./assets/guardar.png">
-                <img src="./assets/lupa.png">
-                <img src="./assets/lapiz.jpg">
-                <img src="./assets/cancelar.png">
-                <div class="usuarioCreado">
-                    <p>¡Usuario creado exitosamente!</p>
-                </div>
+                <a href="./agregarInfo.html"><button>
+                    <i class="bi bi-person-fill-add icon-opciones"></i>
+                </button></a>
+                <a href="usuarioCreado.html"><button>
+                        <i class="fa fa-floppy-o icon-opciones" aria-hidden="true" style="padding: 2.8px;"></i>
+                    </button></a>
+                <button>
+                    <i class="bi bi-search icon-opciones"></i>
+                </button>
+                <button>
+                    <i class="bi bi-pencil icon-opciones"></i>
+                </button>
+                <button>
+                    <i class="bi bi-x icon-opciones"></i>
+                </button>
             </div>
-
-            <section>
-                <div class="admUsuarios">
-                    <p>ADMINISTRACION DE USUARIOS</p>
-                </div>
-            </section>
+            <div class="usuarioCreado">
+                <p>¡Usuario creado exitosamente!</p>
+            </div>
+            <div class="admUsuarios">
+                <p>ADMINISTRACION DE USUARIOS</p>
+            </div>
             <div class="informacion-personal">
                 <section>
                     <p>Tipo de usuario</p>
@@ -77,7 +83,7 @@
                     <p>Nombre</p>
                     <input type="text">
                     <p>Fecha de nacimiento</p>
-                    <input type="date">
+                    <input type="date" style="width:56%;">
                     <p>Correo electronico</p>
                     <input type="email">
                     <p>Contraseña</p>
@@ -86,7 +92,7 @@
                 <section class="cuadroFotoDos">
                     <div class="fotoPerfilDos">
                         <p>Foto de perfil</p>
-                        <img src="./assets/usuario sin foto.jpg">
+                        <i class="bi bi-person perfilFoto"></i>
                     </div>
                 </section>
             </div>

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Contraseña</title>
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-       <!--cambiar contraseña-->
-       <section>
+    <section>
         <header>
-            <img src="./assets/opciones.png">
+            <a target="_blank" href="menuOpciones.html">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
             <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
-            <img src="./assets/usuario sin foto.jpg">
+            <a target="_blank" href="perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
         </header>
         <div class="cuadroFondo">
             <div class="opcionesDos">
-                <div class="menuOpcionesDos">
-                    <p>Perfil</p>
-                </div>
-                <div class="menuOpcionesDos">
-                    <p>Cambiar contraseña</p>
-                </div>
+                <button><a href="informacionUsuario.html">Perfil</a></button>
+                <button>Cambiar contraseña</button>
             </div>
             <div class="formulariosDos">
                 <section>
@@ -36,10 +38,11 @@
                     <input class="ingresoDos" type="password">
                     <input class="ingresoDos" type="password">
                     <input class="ingresoDos" type="password">
-                   <a target="_blank" href="./contraseñaGuardada.html"><input class="guardar" type="submit" value="Guardar cambios"></a> 
+                    <a href="contraseñaGuardada.html"><button class="contraseña">Guardar cambios</button></a>
                 </section>
             </div>
         </div>
     </section>
 </body>
+
 </html>

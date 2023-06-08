@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Administrador usuarios</title>
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section>
         <header>
-            <img src="./assets/opciones.png">
+            <a target="_blank" href="menuOpciones.html">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
             <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
-            <img src="./assets/usuario sin foto.jpg">
+            <a target="_blank" href="perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
         </header>
     </section>
     <div class="cuadroFondo">
-        <div class="opcionesDos">
-            <div class="menuOpcionesDos">
-                <p>Administracion de usuarios</p>
+            <div class="opcionesDos">
+                <a href="agregarInfo.html"><button style="margin-left: 15px;">Administracion de usuarios</button></a>
+                <button><a href="permisosPerfiles.html">Perfiles y permisos</a></button>
+                <button><a href="cuentas.html">Cuentas</a></button>
             </div>
-            <div class="menuOpcionesDos">
-                <p>Perfiles y permisos</p>
-            </div>
-            <div class="menuOpcionesDos">
-                <p>Cuentas</p>
-            </div>
-        </div>
         <section class="formulario">
             <div class="informacionPerfil">
                 <p>Administracion del cliente </p>
             </div>
     </div>
 </body>
+
 </html>
