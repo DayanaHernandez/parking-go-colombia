@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styles/pagos.css">
+    <title>GestorPagos</title>
+</head>
+<body>
+<button id="openModalBtn">Generar Pago</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+			<img class="logo" src="./assets/logo.png" alt="logo del parqueadero">
+			
+	
+			<h2>Gestor de pago</h2>
+			<p><form action="">
+		    <label for="parking-time">Tiempo Estacionado (Horas):</label>
+			<input type="number" id="parking-time" name="parking-time" min="1" required><br>
+			<label for="vehicle-number">Placa:</label>
+			<input type="text" id="vehicle-number" name="vehicle-number" required><br>
+		 
+		  <label for="amount">Cantidad:</label>
+			<input type="text" id="amount" name="amount" readonly><br>
+		  
+				<a href="" class="button">Aceptar</a>
+			</form></p>
+		</div>
+	</div>
+	
+
+    <script src="pagos.js"></script>
+</body>
+</html>
