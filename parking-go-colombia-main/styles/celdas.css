@@ -1,0 +1,77 @@
+.viewContenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.viewDisponible {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black
+}
+.viewOcupada {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black
+}
+.viewRentada {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black
+}
+.titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+.grid-container {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+  }
+  .contenedor-botones-cf {
+    display: flex;
+    justify-content: space-between;
+  }
+  .botones-cf {
+    background-color: rgb(212, 126, 192);
+  }
+  
+  button {
+    font-size: large;
+    padding: 40px 40px;
+    cursor: pointer;
+    border: solid 3px black;
+  }
+  
+  button.disponible {
+    background-color: gray;
+  }
+  
+  button.ocupada {
+    background-color: yellow;
+  }
+  
+  button.rentada {
+    background-color: red;
+  }
+  

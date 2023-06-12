@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Cuentas</title>
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a target="_blank" href="menuOpciones.html">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
+            <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
+            <a target="_blank" href="perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
+        </header>
+    </section>
+    <div class="cuadroFondo">
+        <div class="opcionesDos">
+            <button><a href="informacionUsuario.html">Administracion de usuarios</a></button>
+            <button><a href="permisosPerfiles.html">Perfiles y permisos</a></button>
+            <button>Cuentas</button>
+        </div>
+        <section class="informacion">
+            <div class="cuenta">
+                <p>CUENTAS</p>
+            </div>
+            <div class="informacion-cuenta">
+                <div style="width: 40%;">
+                    <p>Usuarios:</p>
+                    <select>
+                        <option value="S">Seleccione un usuario</option>
+                        <option value="A">Administrador</option>
+                        <option value="T">Trabajador</option>
+                    </select>
+                    <p style="margin-top: 25px;">¿Por que deseas eliminar la cuenta?</p>
+                    <p style="margin-bottom: 2px; margin-top: 25px;">Para continuar ingresa nuevamente </p>
+                    <p style="margin-top: 0px;">la contraseña</p>
+                </div>
+                <div style="width: 60%;">
+                    <input type="text" style="margin-top: 80px;">
+                    <input type="password">
+                </div>
+            </div>
+            <div class="eliminar-cuenta">
+                <button><a href="cuentaEliminada.html">ELIMINAR ESTA CUENTA</a></button>
+            </div>
+            
+        </section>
+    </div>
+</body>
+
+</html>

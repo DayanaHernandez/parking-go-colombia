@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/celdas.css">
+    <link rel="script" href="./estadoCeldas.js">
+    <title> Celdas </title>
+</head>
+
+<body>
+    <h1 class="titulo">ASIGNACION DE CELDAS</h1>
+    <div class="viewContenedor">
+        <div class="viewDisponible">Disponible</div>
+        <div class="viewOcupada">Ocupada</div>
+        <div class="viewRentada">Rentada</div>
+    </div>
+
+    <div class="contenedor">
+        <div id="botones-container" class="grid-container">
+            <button id="boton-1" class="disponible" onclick="cambiarEstado('boton-1')">1</button>
+            <button id="boton-2" class="disponible" onclick="cambiarEstado('boton-2')">2</button>
+            <button id="boton-3" class="disponible" onclick="cambiarEstado('boton-3')">3</button>
+            <button id="boton-4" class="disponible" onclick="cambiarEstado('boton-4')">4</button>
+            <button id="boton-5" class="disponible" onclick="cambiarEstado('boton-5')">5</button>
+            <button id="boton-6" class="disponible" onclick="cambiarEstado('boton-6')">6</button>
+            <button id="boton-7" class="disponible" onclick="cambiarEstado('boton-7')">7</button>
+            <button id="boton-8" class="disponible" onclick="cambiarEstado('boton-8')">8</button>
+            <button id="boton-9" class="disponible" onclick="cambiarEstado('boton-9')">9</button>
+            <button id="boton-10" class="disponible" onclick="cambiarEstado('boton-10')">10</button>
+            <button id="boton-11" class="disponible" onclick="cambiarEstado('boton-11')">11</button>
+            <button id="boton-12" class="disponible" onclick="cambiarEstado('boton-12')">12</button>
+            <button id="boton-13" class="disponible" onclick="cambiarEstado('boton-13')">13</button>
+            <button id="boton-14" class="disponible" onclick="cambiarEstado('boton-14')">14</button>
+            <button id="boton-15" class="disponible" onclick="cambiarEstado('boton-15')">15</button>
+            <button id="boton-16" class="disponible" onclick="cambiarEstado('boton-16')">16</button>
+            <button id="boton-17" class="disponible" onclick="cambiarEstado('boton-17')">17</button>
+            <button id="boton-18" class="disponible" onclick="cambiarEstado('boton-18')">18</button>
+            <button id="boton-19" class="disponible" onclick="cambiarEstado('boton-19')">19</button>
+            <button id="boton-20" class="disponible" onclick="cambiarEstado('boton-20')">20</button>
+            <button id="boton-21" class="disponible" onclick="cambiarEstado('boton-21')">21</button>
+            <button id="boton-22" class="disponible" onclick="cambiarEstado('boton-22')">22</button>
+            <button id="boton-23" class="disponible" onclick="cambiarEstado('boton-23')">23</button>
+            <button id="boton-24" class="disponible" onclick="cambiarEstado('boton-24')">24</button>
+            <button id="boton-25" class="disponible" onclick="cambiarEstado('boton-25')">25</button>
+            <button id="boton-26" class="disponible" onclick="cambiarEstado('boton-26')">26</button>
+            <button id="boton-27" class="disponible" onclick="cambiarEstado('boton-27')">27</button>
+            <button id="boton-28" class="disponible" onclick="cambiarEstado('boton-28')">28</button>
+            <button id="boton-29" class="disponible" onclick="cambiarEstado('boton-29')">29</button>
+            <button id="boton-30" class="disponible" onclick="cambiarEstado('boton-30')">30</button>
+            <button id="boton-31" class="disponible" onclick="cambiarEstado('boton-31')">31</button>
+            <button id="boton-32" class="disponible" onclick="cambiarEstado('boton-32')">32</button>
+            <button id="boton-33" class="disponible" onclick="cambiarEstado('boton-33')">33</button>
+        </div>
+    </div>
+    <div class="contenedor-botones-cf">
+        <button class="botones-cf">Crear celda nueva</button>
+        <button class="botones-cf">Eliminar una Celda</button>
+        <a href="./pagos.html"><button class="botones-cf">Asignar una Celda</button></a>
+    </div>
+    <script>
+        function cambiarEstado(id) {
+            var btn = document.getElementById(id);
+
+            if (btn.classList.contains("disponible")) {
+                btn.classList.remove("disponible");
+                btn.classList.add("ocupada");
+            } else if (btn.classList.contains("ocupada")) {
+                btn.classList.remove("ocupada");
+                btn.classList.add("rentada");
+            } else if (btn.classList.contains("rentada")) {
+                btn.classList.remove("rentada");
+                btn.classList.add("disponible");
+            }
+        }
+    </script>
+</body>
+
+</html>

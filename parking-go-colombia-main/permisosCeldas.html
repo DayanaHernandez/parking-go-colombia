@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos celdas</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/7a3e61c521.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a target="_blank" href="menuOpciones.html" style="text-align: none;">
+                <i class="bi bi-list icon-userUno"></i>
+            </a>
+            <input type="text" placeholder="Buscador de clientes (nombre, apellido y/o cedula)">
+            <a target="_blank" href="perfil.html">
+                <i class="bi bi-person icon-user"></i>
+            </a>
+        </header>
+    </section>
+    <div class="cuadroFondo">
+        <div class="opcionesDos">
+            <button><a href="informacionUsuario.html">Administracion de usuarios</a></button>
+            <button><a href="permisosPerfiles copy.html">Perfiles y permisos</a></button>
+            <button><a href="cuentas.html">Cuentas</a></button>
+        </div>
+        <section class="informacion">
+            <div class="botones">
+                <a href="usuarioCreado.html"><button>
+                        <i class="fa fa-floppy-o icon-opciones" aria-hidden="true" style="padding: 2.8px;"></i>
+                    </button></a>
+            </div>
+            <section>
+                <div class="admUsuarios">
+                    <p>PERFILES Y PERMISOS</p>
+                </div>
+            </section>
+            <div class="info-usuario">
+                <section>
+                    <p>Usuarios:</p>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>12345 - Ejemplo administrador</option>
+                        <option>67890 - Nombre usuario</option>
+                    </select>
+                </section>
+                <section>
+                    <p>Tipo de usuario</p>
+                    <input>
+                </section>
+            </div>
+            <div class="permisos">
+                <div class="adm-clientes">
+                    <a href="permisosPerfiles.html"><button>Administracion de clientes</button></a>
+                </div>
+                <div class="adm-facturacion">
+                    <a href="./facturacion.html"><button>Facturacion</button></a>
+                </div>
+                <div class="adm-celdas">
+                    <button>
+                        <p>Celdas</p>
+                    </button>
+                </div>
+            </div>
+            <div class="permiso-facturacion">
+                <p>CELDAS</p>
+            </div>
+            <div class="lista-permisos">
+                <div style="width: 50%;">
+                    <p><i class="bi bi-check-circle icon-check" ></i> Ver celdas disponibles </p>
+                    <p><i class="bi bi-check-circle icon-check"  ></i> Asignar una celda disponible</p>
+                    <p><i class="bi bi-check-circle icon-check" ></i> Actualizar celdas ocupadas y disponibles</p>
+                </div>
+                <div style="width: 50%;">
+                    <p><i class="bi bi-check-circle icon-check" ></i> Deshabilitar celdas por remodelación</p>
+                </div>
+                
+            </div>
+    </div>
+    </section>
+</body>
+
+</html>
